@@ -18,20 +18,20 @@ protected:
  int width;
  int height;
 };
-class Triangle: public Shape
+class Rectangle: public Shape
 {
 public:
  int getArea()
  {
- return (width * height)/2;
+ return (width * height);
  }
 };
 int main(void)
 {
- Triangle Tri;
- Tri.setWidth(5);
- Tri.setHeight(7);
+ Rectangle Rec;
+ Rec.setWidth(4);
+ Rec.setHeight(10);
  // Print the area of the object.
- cout << "Total Triangle area: " << Tri.getArea() << endl;
+ cout << "Total Rectangle area: " << Rec.getArea() << endl;
  return 0;
 }
